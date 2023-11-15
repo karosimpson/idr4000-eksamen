@@ -4,11 +4,12 @@ project:
 book:
   title: "Mappeeksamen IDR4000"
   author: "Kandudatnummer: 402"
-  date: "17-11-2023"
+  date: "2023-11-16"
   chapters:
     - index.qmd
     - 01-Reliabilitet-reproduserbar-dataanalyse.qmd
     - 02-Vitenskapsfilosofi.qmd
+    - 03-Labrapport.qmd
     - 04-Studiedesign.qmd
     - 05-repetertemålinger.qmd
     - references.qmd

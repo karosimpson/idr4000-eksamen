@@ -2,4 +2,4 @@
 
 Emnet IDR4000, kvantitativ metode og statistikk mappeeksamen for kandidatnummer 402.
 
-Lenke til github: 
+Lenke til github: https://github.com/karosimpson/idr4000-eksamen
