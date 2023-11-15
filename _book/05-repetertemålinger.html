@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mappeeksamen IDR4000 - 5&nbsp; Arbeidskrav 5: Analyse av repeterte målinger</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./04-Studiedesign.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-repetertemålinger.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Arbeidskrav 5: Analyse av repeterte målinger</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Mappeeksamen IDR4000</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduksjon til mappeeksamen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-Reliabilitet-reproduserbar-dataanalyse.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Arbeidskrav 1: Reliabilitet og reproduserbar dataanalyse</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-Vitenskapsfilosofi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Arbeidskrav 2: Vitenskapsfilosofi</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-Labrapport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Arbeidskrav 3: Labrapport - ekstraksjon og analyse av protein</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-Studiedesign.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Arbeidskrav 4: Studiedesign</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-repetertemålinger.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Arbeidskrav 5: Analyse av repeterte målinger</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduksjon" id="toc-introduksjon" class="nav-link active" data-scroll-target="#introduksjon"><span class="header-section-number">5.1</span> Introduksjon</a></li>
+  <li><a href="#metode" id="toc-metode" class="nav-link" data-scroll-target="#metode"><span class="header-section-number">5.2</span> Metode</a>
+  <ul class="collapse">
+  <li><a href="#deltakere" id="toc-deltakere" class="nav-link" data-scroll-target="#deltakere"><span class="header-section-number">5.2.1</span> Deltakere</a></li>
+  <li><a href="#studiedesign" id="toc-studiedesign" class="nav-link" data-scroll-target="#studiedesign"><span class="header-section-number">5.2.2</span> Studiedesign</a></li>
+  <li><a href="#treningsintervensjon" id="toc-treningsintervensjon" class="nav-link" data-scroll-target="#treningsintervensjon"><span class="header-section-number">5.2.3</span> Treningsintervensjon</a></li>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing"><span class="header-section-number">5.2.4</span> Testing</a></li>
+  <li><a href="#dataanalyse-og-statistikk" id="toc-dataanalyse-og-statistikk" class="nav-link" data-scroll-target="#dataanalyse-og-statistikk"><span class="header-section-number">5.2.5</span> Dataanalyse og statistikk</a></li>
+  <li><a href="#resultat" id="toc-resultat" class="nav-link" data-scroll-target="#resultat"><span class="header-section-number">5.2.6</span> Resultat</a></li>
+  </ul></li>
+  <li><a href="#diskusjon" id="toc-diskusjon" class="nav-link" data-scroll-target="#diskusjon"><span class="header-section-number">5.3</span> Diskusjon</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="assignment5" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Arbeidskrav 5: Analyse av repeterte målinger</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduksjon" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="introduksjon"><span class="header-section-number">5.1</span> Introduksjon</h2>
+<p>Styrketrening har en positv effekt på prestasjon i mange idretter som stiller krav til styrke, men også utholdenhetsidrett <span class="citation" data-cites="beattie2014 rønnestad2014">(<a href="references.html#ref-beattie2014" role="doc-biblioref">Beattie et al. 2014</a>; <a href="references.html#ref-rønnestad2014" role="doc-biblioref">Rønnestad and Mujika 2014</a>)</span>. I tillegg har styrketrening en positv effekt sett i et folkehelseperspektiv <span class="citation" data-cites="westcott2012">(<a href="references.html#ref-westcott2012" role="doc-biblioref">Westcott 2012</a>)</span>. Adaptasjoner til styrketrening varierer fra person til person, og henger sammen med en rekke faktorer, som treningsvolum, intensitet, valg av øvelser, hvile mellom sett, hastighet på utførelsen av øvelsen og hyppigheten på treninga <span class="citation" data-cites="ratamess2009">(<a href="references.html#ref-ratamess2009" role="doc-biblioref">N 2009</a>)</span>. I tillegg spiller genetiske disposisjoner og miljøfaktorer en rolle for variasjoner i tilpasninger <span class="citation" data-cites="timmons2011">(<a href="references.html#ref-timmons2011" role="doc-biblioref">Timmons 2011</a>)</span>.</p>
+<p>For utrente personer som begynner med styrketrening varierer økningen i muskelstyrke med 1 %, målt som én repetisjon maksimum (1RM), med en variasjon på 0,1-0,3% <span class="citation" data-cites="mcdonagh1984">(<a href="references.html#ref-mcdonagh1984" role="doc-biblioref">McDonagh and Davies 1984</a>)</span>, samt at tvversnittet til de musklene som trenes økes med 0,1-0,5% per økt <span class="citation" data-cites="wernbom2007">(<a href="references.html#ref-wernbom2007" role="doc-biblioref">Wernbom, Augustsson, and Thome 2007</a>)</span>. Variasjonene i adaptasjonene på styrke- og muskelvekst er sannsynligvis avhengig av hvilken muskelgruppe som trenes, antall serier og repetisjoner, pauselengde, fibertypesammensetning og genetikk <span class="citation" data-cites="raastad2010 tonnessen2018">(<a href="references.html#ref-raastad2010" role="doc-biblioref">Raastad 2010</a>; <a href="references.html#ref-tonnessen2018" role="doc-biblioref">Tønnessen and Rønnestad 2018</a>)</span>. Det ser ut til at det er et dose-respons forhold mellom treningsmengde og styrkeøkning per tidsenhet <span class="citation" data-cites="raastad2010">(<a href="references.html#ref-raastad2010" role="doc-biblioref">Raastad 2010</a>)</span>. Treningsmengden bestemmes av antall økter, serier og hyppighet på øktene, i tillegg ser det ut til at hvor mange øvelser vi trener på hver muskelgruppe kan ha betydning. Hvilken treningsmetode som er gunstig for å få best mulig effekt er man uenige om. <span class="citation" data-cites="carpinelli2002">R. N. Carpinelli (<a href="references.html#ref-carpinelli2002" role="doc-biblioref">2002</a>)</span>; <span class="citation" data-cites="carpinelli1998">Ralph N. Carpinelli and Otto (<a href="references.html#ref-carpinelli1998" role="doc-biblioref">1998</a>)</span> viser til at èn serie på hver muskelgruppe gir best effekt på økning i muskelstyrke, mens andre artikler viser at et moderat treningsvolum med tre serier er fordelaktig <span class="citation" data-cites="krieger2010 radaelli2015 kelly2007">(<a href="references.html#ref-krieger2010" role="doc-biblioref">Krieger 2010</a>; <a href="references.html#ref-radaelli2015" role="doc-biblioref">Radaelli et al. 2015</a>; <a href="references.html#ref-kelly2007" role="doc-biblioref">Kelly et al. 2007</a>)</span>. Når det kommer til økning i muskelmasse viser noen studier at det er en klar fordel ved å trene tre sett framfor ett sett, både for trente og utrente personer <span class="citation" data-cites="krieger2010 sooneste2013">(<a href="references.html#ref-krieger2010" role="doc-biblioref">Krieger 2010</a>; <a href="references.html#ref-sooneste2013" role="doc-biblioref">Sooneste et al. 2013</a>)</span>.</p>
+<p>Målet med denne studien var å sammenlikne effekten av singelserie (1 sett) og multiserie (3 sett) treningsprotokoller på muskelstyrke og muskelmasse for utrente personer.</p>
+</section>
+<section id="metode" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="metode"><span class="header-section-number">5.2</span> Metode</h2>
+<section id="deltakere" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="deltakere"><span class="header-section-number">5.2.1</span> Deltakere</h3>
+<p>Det ble rekruttert 41 mannlige og kvinnelige deltaktere til å delta i studien, med ett kriteritum om å være ikke-røykere og mellom 18 og 40 år. Ekslusjonskriterer var intoleranse av lokal bedøvelse, redusert muskelstyrke på grunn av tidligere eller nåværende skader, gjennomført mer enn én styrkeøkt i uka det siste året før intervensjonen og inntak av medisiner som kan påvirke adaptasjoner til styrketrening. Alle deltakerne hadde tidligere erfaring med idrettsaktiviteter som for eksempel lagidretter, langrenn og turn. Deltakernes karakteristikker vises i <a href="#tbl-kar">Table&nbsp;<span>5.1</span></a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-kar" class="anchored">
+
+<div id="nuobqtygtf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nuobqtygtf table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#nuobqtygtf thead, #nuobqtygtf tbody, #nuobqtygtf tfoot, #nuobqtygtf tr, #nuobqtygtf td, #nuobqtygtf th {
+  border-style: none;
+}
+
+#nuobqtygtf p {
+  margin: 0;
+  padding: 0;
+}
+
+#nuobqtygtf .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#nuobqtygtf .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#nuobqtygtf .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#nuobqtygtf .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#nuobqtygtf .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#nuobqtygtf .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#nuobqtygtf .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#nuobqtygtf .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#nuobqtygtf .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#nuobqtygtf .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#nuobqtygtf .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#nuobqtygtf .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#nuobqtygtf .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#nuobqtygtf .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#nuobqtygtf .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nuobqtygtf .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#nuobqtygtf .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#nuobqtygtf .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#nuobqtygtf .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nuobqtygtf .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#nuobqtygtf .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nuobqtygtf .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#nuobqtygtf .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nuobqtygtf .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nuobqtygtf .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nuobqtygtf .gt_left {
+  text-align: left;
+}
+
+#nuobqtygtf .gt_center {
+  text-align: center;
+}
+
+#nuobqtygtf .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#nuobqtygtf .gt_font_normal {
+  font-weight: normal;
+}
+
+#nuobqtygtf .gt_font_bold {
+  font-weight: bold;
+}
+
+#nuobqtygtf .gt_font_italic {
+  font-style: italic;
+}
+
+#nuobqtygtf .gt_super {
+  font-size: 65%;
+}
+
+#nuobqtygtf .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#nuobqtygtf .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#nuobqtygtf .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#nuobqtygtf .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#nuobqtygtf .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#nuobqtygtf .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#nuobqtygtf .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <caption>Tabell&nbsp;5.1:  <p>Karakteristikker forsøkspersoner ved pre- og post-test</p> </caption>
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="time">time</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Alder<br><small>(år)">Alder<br><small>(år)</small></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Høgde<br><small>(cm)">Høgde<br><small>(cm)</small></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="Vekt<br><small>(kg)">Vekt<br><small>(kg)</small></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="time" class="gt_row gt_left">post</td>
+<td headers="Alder" class="gt_row gt_right">NA</td>
+<td headers="Høgde" class="gt_row gt_right">175.40</td>
+<td headers="Vekt" class="gt_row gt_right">72.50</td></tr>
+    <tr><td headers="time" class="gt_row gt_left">pre</td>
+<td headers="Alder" class="gt_row gt_right">22.91</td>
+<td headers="Høgde" class="gt_row gt_right">174.96</td>
+<td headers="Vekt" class="gt_row gt_right">70.57</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="studiedesign" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="studiedesign"><span class="header-section-number">5.2.2</span> Studiedesign</h3>
+<p>Intervensjonsperioden bestod av 12 uker med styrketrening på helkropp, gjennomført mellom september og november. Bein-øvelsene ble gjennomført seperat for hvert enkelt bein, for å muliggjøre differensiering av treningsvolum på samme deltaker. Hver deltaker ble tilfeldig tildelt enten single-set eller 3-set program for hvert enkelt bein. Hver deltaker gjennomførte dermed to ulike protokoller. Maksimal muskelstyrke ble målt før-, i uke 3, 5 og 9-, og etter intervensjonen. Kroppssammensetningen ble målt før og etter intervensjonen. I tillegg ble det tatt muskelbiopsi fra hvert bein fra vastus lateralis i uke 0 i hvilt tilstand, før og etter 1 time etter femte treningsøkt, og etter fullført treningsintervensjon i hvilt tilstand.</p>
+</section>
+<section id="treningsintervensjon" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="treningsintervensjon"><span class="header-section-number">5.2.3</span> Treningsintervensjon</h3>
+<p>Før hver treningsøkt ble det gjennomført en standard oppvarmingsprotokoll på 5 minutter på ergometersykkel, etterfulgt av 10 repetisjoner av forskjellige kroppsvektøvelser i tillegg til ett sett på 10 repetisjoner ved ~50% av 1RM for hver motstandsøvelse. Beinøvelsene ble gjennomført i lik rekkefølge hver økt, enten som ett sett eller tre sett. Tiden på pause var mellom 90-180 sekunder. Treningsmotstanden økte gradvis gjennom intervensjonen med en start på 10RM de første to ukene, etterfulgt av 8RM i tre uker og 7RM i syv uker. Gjennomsnittelig antall overvåkede økter var 91% av utførte økter. På øktene som ikke var overvåket fikk deltakerne beskjed om å føre detjalerte logger. Disse ble kontrollert for å sikre progresjon og etterlevelse av protokollen.</p>
+</section>
+<section id="testing" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="testing"><span class="header-section-number">5.2.4</span> Testing</h3>
+<p>I forbindelse med studien ble det gjennomført tester av både muskelstyrke, muskeltverrsnitt, kroppssammensetning, hormonelle målinger, biopsi av muskelvev, immunhisokjemi og protein analyse. Men i denne rapporten vil vi bare gå inn på muskelstyrke, muskeltverrsnitt og kroppssammensetning.</p>
+<section id="muskelstyrke" class="level4" data-number="5.2.4.1">
+<h4 data-number="5.2.4.1" class="anchored" data-anchor-id="muskelstyrke"><span class="header-section-number">5.2.4.1</span> Muskelstyrke</h4>
+<p>Det ble gjennomført styrketester av isometrisk og isokinetisk uniliteral kneekstensjon målt ved et dynamometer. Deltakerne ble testet i maksimalt isokinetisk dreiemoment ved 60°, 120° og 240° s-1 hastighet. Deltakerne fikk flere forsøk på hver hastighet. Høyeste verdi for for hver hastighet ble brukt i analysene MFK-dreiemoment ble målt ved en knevinkel på 30°, etter isokinetisk testing. Her fikk deltakerne beskjed om å presse med maksimal kraft i 5 sekunder. De fikk to forsøk, med 30 sekunder hvile mellom. Beste forsøk ble brukt i analysene.</p>
+<p>Maksimal styrke i kneekstensjonen ble målt som 1RM i unilateral beinpress og kneekstensjon. Testen startet med en spesifikk oppvarming i hver øvelse på 10, 6 og 3 repetisjoner på 50, 75 og 85% av antatt 1RM. Deretter ble 1RM funnet ved å gradvis øke vekta, inntil vekta ikke kunnes løftes med full “range of motion” lenger. Det høyeste godkjente løftet ble satt til 1RM, og deltakerne hadde fire til seks forsøk på hver øvelse.</p>
+<p>Ved baseline ble både 1RM, isokinetisk og isometrisk styrketester gjennomført i to omganger med en avstand på minst fire dager. De beste verdiene ble brukt i de statistiske analysene. Styrketestene ble atskilt med minst 48 timer fra treningsøkt. Alle de tre testene utgjorde tilsammen en kombinert score for utregning av muskelstyrke.</p>
+</section>
+<section id="muskeltverrsnitt-og-kroppssammensetning" class="level4" data-number="5.2.4.2">
+<h4 data-number="5.2.4.2" class="anchored" data-anchor-id="muskeltverrsnitt-og-kroppssammensetning"><span class="header-section-number">5.2.4.2</span> Muskeltverrsnitt og kroppssammensetning</h4>
+<p>Det ble gjort målinger av muskeltverrsnittet av knestrekkerne (vastus lateralis, medialis, intermedius og rectus femoris) både før og etter intervensjonen ved bruk av magnetisk resonans (MR). Tverrsnittet ble målt på nøyaktig samme sted begge gangene for hver deltaker. Kroppsammensetningen ble målt før og etter intervensjonen ved bruk av dual-energy X-ray absorptiometry (DXA). DXA ble tatt to dager etter siste styrketreningsøkt, og deltakerne måtte faste de siste 2 timene og unngå hard fysisk aktivitet de siste 48 timene.</p>
+</section>
+</section>
+<section id="dataanalyse-og-statistikk" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="dataanalyse-og-statistikk"><span class="header-section-number">5.2.5</span> Dataanalyse og statistikk</h3>
+<p>De statistike analysene er gjort i R studio. For å se på effekten av treningsvolum på maksimal styrke, i form av 1RM i beinpress, og muskelhypertrofi, ble det brukt en mixed linear model (MLL). Her er muskelstyrke og muskelmasse den avhengige variabelen, mens tidspunkt og sett er den uavhengige. Statistisk signifikans ble satt til &lt;0.05.</p>
+<p>I dataanalysene ble syv deltakere ekskludert fordi de ikke fullført 85% av de planlagte treningsøktene av ulike grunner.</p>
+</section>
+<section id="resultat" class="level3" data-number="5.2.6">
+<h3 data-number="5.2.6" class="anchored" data-anchor-id="resultat"><span class="header-section-number">5.2.6</span> Resultat</h3>
+<p>Resultatene viser at både single-sett og multiple-sett gir en økning i muskelstyrke i form av 1RM i beinpress over en 12 uker lang treningsperiode, se <a href="#fig-str">Figur&nbsp;<span>5.1</span></a>. I tillegg ser vi en økning i muskelmasse for begge gruppene, se <a href="#fig-dxa">Figur&nbsp;<span>5.2</span></a>. Likevel kan vi se av <a href="#tbl-koef">Table&nbsp;<span>5.2</span></a> at økning i den maksimale muskelstyrken ikke kommer av forskjeller i antall sett, så lenge det ikke ble observert en effekt mellom gruppene i 1RM i beinpress. I samme tabell kan vi se at økningen i fettfri masse var større for de som trente multiple-sett, enn de som trente single-sett.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-str" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="05-repetertemålinger_files/figure-html/fig-str-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption"><strong>Figur</strong>&nbsp;5.1: Volumavhengige endringer i 1RM beinpress i uke 0, 2, 5, 9 og 12</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-dxa" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="05-repetertemålinger_files/figure-html/fig-dxa-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption"><strong>Figur</strong>&nbsp;5.2: Volumavhengig endringer i fettfri masse mellom pre og post-test</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-koef" class="anchored">
+
+<div id="lbfhiayozg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lbfhiayozg table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#lbfhiayozg thead, #lbfhiayozg tbody, #lbfhiayozg tfoot, #lbfhiayozg tr, #lbfhiayozg td, #lbfhiayozg th {
+  border-style: none;
+}
+
+#lbfhiayozg p {
+  margin: 0;
+  padding: 0;
+}
+
+#lbfhiayozg .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#lbfhiayozg .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#lbfhiayozg .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#lbfhiayozg .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#lbfhiayozg .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#lbfhiayozg .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#lbfhiayozg .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#lbfhiayozg .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#lbfhiayozg .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#lbfhiayozg .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#lbfhiayozg .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#lbfhiayozg .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#lbfhiayozg .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#lbfhiayozg .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#lbfhiayozg .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lbfhiayozg .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#lbfhiayozg .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#lbfhiayozg .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#lbfhiayozg .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lbfhiayozg .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#lbfhiayozg .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lbfhiayozg .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#lbfhiayozg .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lbfhiayozg .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#lbfhiayozg .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lbfhiayozg .gt_left {
+  text-align: left;
+}
+
+#lbfhiayozg .gt_center {
+  text-align: center;
+}
+
+#lbfhiayozg .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#lbfhiayozg .gt_font_normal {
+  font-weight: normal;
+}
+
+#lbfhiayozg .gt_font_bold {
+  font-weight: bold;
+}
+
+#lbfhiayozg .gt_font_italic {
+  font-style: italic;
+}
+
+#lbfhiayozg .gt_super {
+  font-size: 65%;
+}
+
+#lbfhiayozg .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#lbfhiayozg .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#lbfhiayozg .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#lbfhiayozg .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#lbfhiayozg .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#lbfhiayozg .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#lbfhiayozg .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Tabell&nbsp;5.2:  <p>Oversikt over effektene av styrketrening med single- og multiple-sett
+på 1RM beinpress og fettfri kroppsmasse qnalysert av LMMs.
+Tid:Gruppemultiple viser til forskjeller av stigningstall mellom
+gruppene. SE = standardfeil og DF = frihetsgrader.</p> </caption>
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="<strong>Koeffisienter</strong>"><strong>Koeffisienter</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="<strong>Estimat</strong>"><strong>Estimat</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="<strong>SE</strong>"><strong>SE</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="<strong>DF</strong>"><strong>DF</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="<strong>t.verdi</strong>"><strong>t.verdi</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="<strong>p.verdi</strong>"><strong>p.verdi</strong></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr class="gt_group_heading_row">
+      <th colspan="6" class="gt_group_heading" scope="colgroup" id="<em>1RM Beinpress</em>"><em>1RM Beinpress</em></th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="*1RM Beinpress*  Koeffisienter" class="gt_row gt_left">Intercept</td>
+<td headers="*1RM Beinpress*  Estimate" class="gt_row gt_right">182.57</td>
+<td headers="*1RM Beinpress*  Std..Error" class="gt_row gt_right">10.19</td>
+<td headers="*1RM Beinpress*  df" class="gt_row gt_right">35.19</td>
+<td headers="*1RM Beinpress*  t.value" class="gt_row gt_right">17.91</td>
+<td headers="*1RM Beinpress*  Pr...t.." class="gt_row gt_right">0.00</td></tr>
+    <tr><td headers="*1RM Beinpress*  Koeffisienter" class="gt_row gt_left">Tid</td>
+<td headers="*1RM Beinpress*  Estimate" class="gt_row gt_right">6.42</td>
+<td headers="*1RM Beinpress*  Std..Error" class="gt_row gt_right">0.35</td>
+<td headers="*1RM Beinpress*  df" class="gt_row gt_right">314.03</td>
+<td headers="*1RM Beinpress*  t.value" class="gt_row gt_right">18.47</td>
+<td headers="*1RM Beinpress*  Pr...t.." class="gt_row gt_right">0.00</td></tr>
+    <tr><td headers="*1RM Beinpress*  Koeffisienter" class="gt_row gt_left">Gruppemultiple</td>
+<td headers="*1RM Beinpress*  Estimate" class="gt_row gt_right">2.92</td>
+<td headers="*1RM Beinpress*  Std..Error" class="gt_row gt_right">3.06</td>
+<td headers="*1RM Beinpress*  df" class="gt_row gt_right">313.98</td>
+<td headers="*1RM Beinpress*  t.value" class="gt_row gt_right">0.96</td>
+<td headers="*1RM Beinpress*  Pr...t.." class="gt_row gt_right">0.34</td></tr>
+    <tr><td headers="*1RM Beinpress*  Koeffisienter" class="gt_row gt_left">Tid:Gruppemultiple</td>
+<td headers="*1RM Beinpress*  Estimate" class="gt_row gt_right">0.71</td>
+<td headers="*1RM Beinpress*  Std..Error" class="gt_row gt_right">0.49</td>
+<td headers="*1RM Beinpress*  df" class="gt_row gt_right">314.00</td>
+<td headers="*1RM Beinpress*  t.value" class="gt_row gt_right">1.45</td>
+<td headers="*1RM Beinpress*  Pr...t.." class="gt_row gt_right">0.15</td></tr>
+    <tr class="gt_group_heading_row">
+      <th colspan="6" class="gt_group_heading" scope="colgroup" id="<em>Fettfri Masse</em>"><em>Fettfri Masse</em></th>
+    </tr>
+    <tr class="gt_row_group_first"><td headers="*Fettfri Masse*  Koeffisienter" class="gt_row gt_left">Intercept</td>
+<td headers="*Fettfri Masse*  Estimate" class="gt_row gt_right">8,603.53</td>
+<td headers="*Fettfri Masse*  Std..Error" class="gt_row gt_right">353.07</td>
+<td headers="*Fettfri Masse*  df" class="gt_row gt_right">33.68</td>
+<td headers="*Fettfri Masse*  t.value" class="gt_row gt_right">24.37</td>
+<td headers="*Fettfri Masse*  Pr...t.." class="gt_row gt_right">0.00</td></tr>
+    <tr><td headers="*Fettfri Masse*  Koeffisienter" class="gt_row gt_left">Tid</td>
+<td headers="*Fettfri Masse*  Estimate" class="gt_row gt_right">289.06</td>
+<td headers="*Fettfri Masse*  Std..Error" class="gt_row gt_right">58.01</td>
+<td headers="*Fettfri Masse*  df" class="gt_row gt_right">99.00</td>
+<td headers="*Fettfri Masse*  t.value" class="gt_row gt_right">4.98</td>
+<td headers="*Fettfri Masse*  Pr...t.." class="gt_row gt_right">0.00</td></tr>
+    <tr><td headers="*Fettfri Masse*  Koeffisienter" class="gt_row gt_left">Gruppemultiple</td>
+<td headers="*Fettfri Masse*  Estimate" class="gt_row gt_right">−14.53</td>
+<td headers="*Fettfri Masse*  Std..Error" class="gt_row gt_right">58.01</td>
+<td headers="*Fettfri Masse*  df" class="gt_row gt_right">99.00</td>
+<td headers="*Fettfri Masse*  t.value" class="gt_row gt_right">−0.25</td>
+<td headers="*Fettfri Masse*  Pr...t.." class="gt_row gt_right">0.80</td></tr>
+    <tr><td headers="*Fettfri Masse*  Koeffisienter" class="gt_row gt_left">Tid:Gruppemultiple</td>
+<td headers="*Fettfri Masse*  Estimate" class="gt_row gt_right">−137.32</td>
+<td headers="*Fettfri Masse*  Std..Error" class="gt_row gt_right">58.01</td>
+<td headers="*Fettfri Masse*  df" class="gt_row gt_right">99.00</td>
+<td headers="*Fettfri Masse*  t.value" class="gt_row gt_right">−2.37</td>
+<td headers="*Fettfri Masse*  Pr...t.." class="gt_row gt_right">0.02</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="diskusjon" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="diskusjon"><span class="header-section-number">5.3</span> Diskusjon</h2>
+<p>Denne studien viser at over en 12-ukers treningsperiode får utrente personer en effekt av å trene både single-sett og multiple-sett, målt kg i 1RM i øvelsen beinpress. Effekten av å trene single-sett og multiple-sett var tilsvarende lik. Det kan være verdt å merke seg at disse deltakerne var utrente personer, som ikke har trent styrke mer enn én gang i uka det siste året. Det kan dermed se ut til at de får en effekt uansett. Tidligere studier har funnet best effekt på både single-sett <span class="citation" data-cites="carpinelli2002 carpinelli1998">(<a href="references.html#ref-carpinelli2002" role="doc-biblioref">R. N. Carpinelli 2002</a>; <a href="references.html#ref-carpinelli1998" role="doc-biblioref">Ralph N. Carpinelli and Otto 1998</a>)</span> og multiple-sett <span class="citation" data-cites="krieger2010 radaelli2015 kelly2007">(<a href="references.html#ref-krieger2010" role="doc-biblioref">Krieger 2010</a>; <a href="references.html#ref-radaelli2015" role="doc-biblioref">Radaelli et al. 2015</a>; <a href="references.html#ref-kelly2007" role="doc-biblioref">Kelly et al. 2007</a>)</span>. Ettersom tidsklemma kan være et problem for mange, kan det være nyttig å vite at det å trene single-sett gir like god effekt på muskelstyrke som multiple-sett.</p>
+<p>Det var likevel en signifikant forskjell i endring i fettfri kroppsmasse, der de som trente multiple-sett hadde en større økning enn de som trente single-sett. Dette støtter tidligere studier som fant at multiple-sett gir størt økning i muskelmasse sammeliknet med single-sett <span class="citation" data-cites="krieger2010 sooneste2013 radaelli2015 kelly2007">(<a href="references.html#ref-krieger2010" role="doc-biblioref">Krieger 2010</a>; <a href="references.html#ref-sooneste2013" role="doc-biblioref">Sooneste et al. 2013</a>; <a href="references.html#ref-radaelli2015" role="doc-biblioref">Radaelli et al. 2015</a>; <a href="references.html#ref-kelly2007" role="doc-biblioref">Kelly et al. 2007</a>)</span>.</p>
+<p>Vi kan konkludere med at over en 12-ukers treningsperiode gir både single-sett og multiple-sett effekt på muskelstyrke og muskelmasse. Likevel vil multiple-sett være fordelaktig når man ser på utviklingen av muskelmasse.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-beattie2014" class="csl-entry" role="listitem">
+Beattie, Kris, Ian C. Kenny, Mark Lyons, and Brian P. Carson. 2014. <span>“The Effect of Strength Training on Performance in Endurance Athletes.”</span> <em>Sports Medicine</em> 44 (6): 845–65. <a href="https://doi.org/10.1007/s40279-014-0157-y">https://doi.org/10.1007/s40279-014-0157-y</a>.
+</div>
+<div id="ref-carpinelli2002" class="csl-entry" role="listitem">
+Carpinelli, R N. 2002. <span>“Berger in Retrospect: Effect of Varied Weight Training Programmes on Strength.”</span> <em>British Journal of Sports Medicine</em> 36 (5): 319–24. <a href="https://doi.org/10.1136/bjsm.36.5.319">https://doi.org/10.1136/bjsm.36.5.319</a>.
+</div>
+<div id="ref-carpinelli1998" class="csl-entry" role="listitem">
+Carpinelli, Ralph N., and Robert M. Otto. 1998. <span>“Strength <span>Training</span>: <span>Single</span> <span>Versus</span> <span>Multiple</span> <span>Sets</span>.”</span> <em>Sports Medicine</em> 26 (2): 73–84. <a href="https://doi.org/10.2165/00007256-199826020-00002">https://doi.org/10.2165/00007256-199826020-00002</a>.
+</div>
+<div id="ref-kelly2007" class="csl-entry" role="listitem">
+Kelly, Stephen B., Lee E. Brown, Jared W. Coburn, Steven M. Zinder, Lisa M. Gardner, and Diamond Nguyen. 2007. <span>“<span>The</span> <span class="nocase">effect</span> <span class="nocase">of</span> <span class="nocase">single</span> <span class="nocase">versus</span> <span class="nocase">multiple</span> <span class="nocase">sets</span> <span class="nocase">on</span> <span class="nocase">strength</span>.”</span> <em>Journal of Strength and Conditioning Research</em> 21 (4): 1003–6. <a href="https://doi.org/10.1519/00124278-200711000-00003">https://doi.org/10.1519/00124278-200711000-00003</a>.
+</div>
+<div id="ref-krieger2010" class="csl-entry" role="listitem">
+Krieger, James W. 2010. <span>“Single Vs. Multiple Sets of Resistance Exercise for Muscle Hypertrophy: A Meta-Analysis.”</span> <em>Journal of Strength and Conditioning Research</em> 24 (4): 1150–59. <a href="https://doi.org/10.1519/jsc.0b013e3181d4d436">https://doi.org/10.1519/jsc.0b013e3181d4d436</a>.
+</div>
+<div id="ref-mcdonagh1984" class="csl-entry" role="listitem">
+McDonagh, M. J. N., and C. T. M. Davies. 1984. <span>“Adaptive Response of Mammalian Skeletal Muscle to Exercise with High Loads.”</span> <em>European Journal of Applied Physiology and Occupational Physiology</em> 52 (2): 139–55. <a href="https://doi.org/10.1007/BF00433384">https://doi.org/10.1007/BF00433384</a>.
+</div>
+<div id="ref-ratamess2009" class="csl-entry" role="listitem">
+N, Ratamess. 2009. <span>“Progression Models in Resistance Training for Healthy Adults.”</span> <em>Medicine <span>&amp;</span>Amp<span class="math inline">\(\mathsemicolon\)</span> Science in Sports <span>&amp;</span>Amp<span class="math inline">\(\mathsemicolon\)</span> Exercise</em> 41 (3): 687–708. <a href="https://doi.org/10.1249/mss.0b013e3181915670">https://doi.org/10.1249/mss.0b013e3181915670</a>.
+</div>
+<div id="ref-raastad2010" class="csl-entry" role="listitem">
+Raastad, Truls. 2010. <em>Styrketrening: I Teori Og Praksis</em>. Oslo: Gyldendal Norsk forlag.
+</div>
+<div id="ref-radaelli2015" class="csl-entry" role="listitem">
+Radaelli, Regis, Steven J. Fleck, Thalita Leite, Richard D. Leite, Ronei S. Pinto, Liliam Fernandes, and Roberto Simão. 2015. <span>“Dose-Response of 1, 3, and 5 Sets of Resistance Exercise on Strength, Local Muscular Endurance, and Hypertrophy.”</span> <em>Journal of Strength and Conditioning Research</em> 29 (5): 1349–58. <a href="https://doi.org/10.1519/jsc.0000000000000758">https://doi.org/10.1519/jsc.0000000000000758</a>.
+</div>
+<div id="ref-rønnestad2014" class="csl-entry" role="listitem">
+Rønnestad, B. R., and I. Mujika. 2014. <span>“Optimizing Strength Training for Running and Cycling Endurance Performance: A Review.”</span> <em>Scandinavian Journal of Medicine <span>&amp;</span>Amp<span class="math inline">\(\mathsemicolon\)</span> Science in Sports</em> 24 (4): 603–12. <a href="https://doi.org/10.1111/sms.12104">https://doi.org/10.1111/sms.12104</a>.
+</div>
+<div id="ref-sooneste2013" class="csl-entry" role="listitem">
+Sooneste, Heiki, Michiya Tanimoto, Ryo Kakigi, Norio Saga, and Shizuo Katamoto. 2013. <span>“Effects of Training Volume on Strength and Hypertrophy in Young Men.”</span> <em>Journal of Strength and Conditioning Research</em> 27 (1): 8–13. <a href="https://doi.org/10.1519/jsc.0b013e3182679215">https://doi.org/10.1519/jsc.0b013e3182679215</a>.
+</div>
+<div id="ref-timmons2011" class="csl-entry" role="listitem">
+Timmons, James A. 2011. <span>“Variability in Training-Induced Skeletal Muscle Adaptation.”</span> <em>Journal of Applied Physiology</em> 110 (3): 846–53. <a href="https://doi.org/10.1152/japplphysiol.00934.2010">https://doi.org/10.1152/japplphysiol.00934.2010</a>.
+</div>
+<div id="ref-tonnessen2018" class="csl-entry" role="listitem">
+Tønnessen, Espen, and Bent R. Rønnestad. 2018. <em>Trening Fra Barneidrett Til Toppidrett</em>. Oslo: Gyldendal Olympiatoppen.
+</div>
+<div id="ref-wernbom2007" class="csl-entry" role="listitem">
+Wernbom, Mathias, Jesper Augustsson, and Roland Thome. 2007. <span>“The <span>Influence</span> of <span>Frequency</span>, <span>Intensity</span>, <span>Volume</span> and <span>Mode</span> of <span>Strength</span> <span>Training</span> on <span>Whole</span> <span>Muscle</span> <span>Cross</span>-<span>Sectional</span> <span>Area</span> in <span>Humans</span>:”</span> <em>Sports Medicine</em> 37 (3): 225–64. <a href="https://doi.org/10.2165/00007256-200737030-00004">https://doi.org/10.2165/00007256-200737030-00004</a>.
+</div>
+<div id="ref-westcott2012" class="csl-entry" role="listitem">
+Westcott, Wayne L. 2012. <span>“Resistance Training Is Medicine.”</span> <em>Current Sports Medicine Reports</em> 11 (4): 209–16. <a href="https://doi.org/10.1249/jsr.0b013e31825dabb8">https://doi.org/10.1249/jsr.0b013e31825dabb8</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./04-Studiedesign.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Arbeidskrav 4: Studiedesign</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
